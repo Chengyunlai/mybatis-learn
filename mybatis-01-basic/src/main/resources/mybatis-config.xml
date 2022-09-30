@@ -20,5 +20,6 @@
     <mappers>
         <mapper resource="mapper/DepartmentDao.xml"/>
         <mapper resource="mapper/DepartmentMapper.xml"/>
+        <mapper resource="mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
