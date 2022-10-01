@@ -7,13 +7,35 @@
         <result column="age" property="age"/>
         <result column="birthday" property="birthday" />
         <association property="department" javaType="top.chengyunlai.mybatis.entity.Department">
-            <id property="id" column="department_id"/>
-            <result property="name" column="department_name"/>
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+            <result property="tel" column="tel"/>
         </association>
+    </resultMap>
+    <!--给 association 标签添加 select 和 column 属性，
+    分别指定触发延迟加载时调用的 statement ，以及执行 statement 时传入的参数的列，
+    就可以实现延迟加载了。-->
+    <resultMap id="userlazy" type="top.chengyunlai.mybatis.entity.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="birthday" column="birthday"/>
+        <!--column 传入的是参数-->
+        <association property="department" javaType="top.chengyunlai.mybatis.entity.Department"
+                     select="top.chengyunlai.mybatis.mapper.DepartmentMapper.findById" column="department_id"/>
     </resultMap>
 
     <select id="findAll" resultMap="userMap">
         select usr.*, dep.name as department_name
         from tbl_user usr left join tbl_department dep on usr.department_id = dep.id
+#         select * from tbl_user user,tbl_department dep where user.department_id = dep.id;
+    </select>
+
+    <select id="findAllLazy" resultMap="userlazy">
+        select * from tbl_user
+    </select>
+
+    <select id="findAllByDepartmentId" parameterType="string" resultType="top.chengyunlai.mybatis.entity.User">
+        select * from tbl_user where department_id = #{departmentId}
     </select>
 </mapper>
