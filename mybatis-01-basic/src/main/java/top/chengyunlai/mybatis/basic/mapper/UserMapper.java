@@ -1,6 +1,6 @@
-package top.chengyunlai.mybatis.mapper;
+package top.chengyunlai.mybatis.basic.mapper;
 
-import top.chengyunlai.mybatis.entity.User;
+import top.chengyunlai.mybatis.basic.entity.User;
 
 import java.util.List;
 

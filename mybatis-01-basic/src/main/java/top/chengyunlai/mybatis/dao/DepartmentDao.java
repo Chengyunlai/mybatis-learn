@@ -1,6 +1,6 @@
 package top.chengyunlai.mybatis.dao;
 
-import top.chengyunlai.mybatis.entity.Department;
+import top.chengyunlai.mybatis.basic.entity.Department;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--mapper.xml 中的 namespace 与 Mapper 接口的全限定名完全相同-->
-<mapper namespace="top.chengyunlai.mybatis.basic.mapper.DepartmentMapper">
+<mapper namespace="top.chengyunlai.mybatis.configuration.mapper.DepartmentMapper">
 
     <resultMap id="department" type="top.chengyunlai.mybatis.basic.entity.Department">
         <id property="id" column="id"/>

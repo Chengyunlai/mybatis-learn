@@ -1,4 +1,4 @@
-package top.chengyunlai.mybatis.entity;
+package top.chengyunlai.mybatis.configuration.entity;
 
 import java.util.Set;
 

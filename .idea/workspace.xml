@@ -4,12 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853a9c5f-578a-4707-9801-9cb1cc9163de" name="Default Changelist" comment="一对一">
+    <list default="true" id="853a9c5f-578a-4707-9801-9cb1cc9163de" name="Default Changelist" comment="多对一">
+      <change afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/basic/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/basic/mapper/DepartmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/basic/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-02-configuration/mybatis-02-configuration.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-02-configuration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/java/top/chengyunlai/mybatis/configuration/MyBatisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/java/top/chengyunlai/mybatis/configuration/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-config/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/MyBatisApplication1.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/MyBatisApplication1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/MyBatisApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/MyBatisApplication2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/MyBatisApplication3.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/MyBatisApplication3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/dao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/dao/impl/DepartmentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/dao/impl/DepartmentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/java/top/chengyunlai/mybatis/configuration/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/java/top/chengyunlai/mybatis/configuration/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/java/top/chengyunlai/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02-configuration/src/main/java/top/chengyunlai/mybatis/configuration/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-config/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mapper/DepartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mapper/DepartmentDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01-basic/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-config/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +44,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Mapper" />
         <option value="Mybatis Mapper" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -43,10 +68,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.18646735" />
+    <property name="project.structure.side.proportion" value="0.37361532" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis" />
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis\mybatis-02-configuration\src\main\resources\mapper" />
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis\mybatis-02-configuration\src\main\java\top\chengyunlai\mybatis\configuration" />
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis\mybatis-02-configuration\src\main\java\top\chengyunlai\mybatis\mapper" />
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis\mybatis-02-configuration\src\main\java\top\chengyunlai\mybatis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis\mybatis-config\src\main\resources" />
+      <recent name="C:\Users\12579\Desktop\mybatis\code\mybatis\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.chengyunlai.mybatis.basic" />
       <recent name="top.chengyunlai.mybatis" />
     </key>
   </component>
@@ -103,13 +144,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,7 +178,8 @@
       <workItem from="1664348954785" duration="4133000" />
       <workItem from="1664417709577" duration="5252000" />
       <workItem from="1664543892914" duration="2879000" />
-      <workItem from="1664590683906" duration="3285000" />
+      <workItem from="1664590683906" duration="3618000" />
+      <workItem from="1664620524777" duration="3119000" />
     </task>
     <task id="LOCAL-00001" summary="一对一">
       <created>1664550567055</created>
@@ -144,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664550567055</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="多对一">
+      <created>1664594267178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664594267178</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +215,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="一对一" />
-    <option name="LAST_COMMIT_MESSAGE" value="一对一" />
+    <MESSAGE value="多对一" />
+    <option name="LAST_COMMIT_MESSAGE" value="多对一" />
   </component>
 </project>

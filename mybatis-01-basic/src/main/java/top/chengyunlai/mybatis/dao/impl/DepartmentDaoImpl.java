@@ -3,7 +3,7 @@ package top.chengyunlai.mybatis.dao.impl;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import top.chengyunlai.mybatis.dao.DepartmentDao;
-import top.chengyunlai.mybatis.entity.Department;
+import top.chengyunlai.mybatis.basic.entity.Department;
 
 import java.util.List;
 
