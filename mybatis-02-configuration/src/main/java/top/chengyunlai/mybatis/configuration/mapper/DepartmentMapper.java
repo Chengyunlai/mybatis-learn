@@ -1,6 +1,7 @@
 package top.chengyunlai.mybatis.configuration.mapper;
 
-import top.chengyunlai.mybatis.configuration.entity.Department;
+import top.chengyunlai.mybatis.entity.Department;
+
 import java.util.List;
 
 public interface DepartmentMapper {

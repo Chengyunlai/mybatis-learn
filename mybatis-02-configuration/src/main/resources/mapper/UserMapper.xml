@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="top.chengyunlai.mybatis.configuration.mapper.UserMapper">
-    <resultMap id="userMap" type="top.chengyunlai.mybatis.basic.entity.User">
+    <resultMap id="userMap" type="top.chengyunlai.mybatis.entity.User">
         <id column="id" property="id"/>
         <result column="name" property="name"/>
         <result column="age" property="age"/>
         <result column="birthday" property="birthday" />
-        <association property="department" javaType="top.chengyunlai.mybatis.basic.entity.Department">
+        <association property="department" javaType="top.chengyunlai.mybatis.entity.Department">
             <id property="id" column="id"/>
             <result property="name" column="name"/>
             <result property="tel" column="tel"/>
@@ -15,14 +15,23 @@
     <!--给 association 标签添加 select 和 column 属性，
     分别指定触发延迟加载时调用的 statement ，以及执行 statement 时传入的参数的列，
     就可以实现延迟加载了。-->
-    <resultMap id="userlazy" type="top.chengyunlai.mybatis.basic.entity.User">
+    <resultMap id="userlazy" type="top.chengyunlai.mybatis.entity.User">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="age" column="age"/>
         <result property="birthday" column="birthday"/>
         <!--column 传入的是参数-->
-        <association property="department" javaType="top.chengyunlai.mybatis.basic.entity.Department"
+        <association property="department" javaType="top.chengyunlai.mybatis.entity.Department"
                      select="top.chengyunlai.mybatis.basic.mapper.DepartmentMapper.findById" column="department_id"/>
+    </resultMap>
+
+    <!--使用handle处理department这个类-->
+    <resultMap id="userHandlerMap" type="user">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="birthday" column="birthday"/>
+        <association property="department" javaType="department"/>
     </resultMap>
 
     <select id="findAll" resultMap="userMap">
@@ -35,7 +44,26 @@
         select * from tbl_user
     </select>
 
-    <select id="findAllByDepartmentId" parameterType="string" resultType="top.chengyunlai.mybatis.basic.entity.User">
+    <select id="findAllByDepartmentId" parameterType="string" resultType="top.chengyunlai.mybatis.entity.User">
         select * from tbl_user where department_id = #{departmentId}
     </select>
+
+    <select id="findAllUseTypeHandler" resultType="user">
+        select * from tbl_user
+    </select>
+
+    <insert id="saveUser" parameterType="user">
+        insert into tbl_user (id, name, department_id) VALUES (#{id}, #{name}, #{department})
+    </insert>
+
+    <select id="findAllByDepartmentIdMysql" parameterType="string"
+            resultType="user" databaseId="mysql">
+        select * from tbl_user where department_id = #{departmentId}
+    </select>
+
+    <!--<select id="findAllByDepartmentIdMysql" parameterType="string"-->
+    <!--        resultType="user" databaseId="postgresql">-->
+    <!--    &lt;!&ndash; 注意这里查的表不一样 &ndash;&gt;-->
+    <!--    select * from users where department_id = #{departmentId}-->
+    <!--</select>-->
 </mapper>

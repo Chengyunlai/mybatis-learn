@@ -3,19 +3,19 @@
 <!--mapper.xml 中的 namespace 与 Mapper 接口的全限定名完全相同-->
 <mapper namespace="top.chengyunlai.mybatis.basic.mapper.DepartmentMapper">
 
-    <resultMap id="department" type="top.chengyunlai.mybatis.basic.entity.Department">
+    <resultMap id="department" type="top.chengyunlai.mybatis.entity.Department">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="tel" column="tel"/>
-        <collection property="users" ofType="top.chengyunlai.mybatis.basic.entity.User"
+        <collection property="users" ofType="top.chengyunlai.mybatis.entity.User"
                     select="top.chengyunlai.mybatis.basic.mapper.UserMapper.findAllByDepartmentId" column="id"/>
     </resultMap>
 
-    <insert id="insert" parameterType="top.chengyunlai.mybatis.basic.entity.Department">
+    <insert id="insert" parameterType="top.chengyunlai.mybatis.entity.Department">
         insert into tbl_department (id, name, tel) values (#{id}, #{name}, #{tel})
     </insert>
 
-    <update id="update" parameterType="top.chengyunlai.mybatis.basic.entity.Department">
+    <update id="update" parameterType="top.chengyunlai.mybatis.entity.Department">
         update tbl_department set name = #{name}, tel = #{tel} where id = #{id}
     </update>
 
